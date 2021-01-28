@@ -22,11 +22,18 @@ verbs=["play","watch"]
 objects=["Baseball","Cricket"]
 list=[]
 
-def gen_phrase(subjects, verbs, objects):
-    for sub in range(len(subjects)):
-           for verb in range(len(verbs)):
-                for obj in range(len(objects)):
-                      list.append(subjects[sub]+" "+ verbs[verb]+" "+objects[obj])
+try:
+    def gen_phrase(subjects, verbs, objects):
+        for sub in range(len(subjects)):
+               for verb in range(len(verbs)):
+                    for obj in range(len(objects)):
+                          list.append(subjects[sub]+" "+ verbs[verb]+" "+objects[obj])
+                    
+    
+except Exception as e:
+    print(e)
+   
+    
 
 gen_phrase(subjects, verbs, objects)
 for i in range(len(list)):
